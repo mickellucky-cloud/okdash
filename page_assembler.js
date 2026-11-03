@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const rootDir = 'C:/Users/Loliya.DESKTOP-A3QATVT/.gemini/antigravity/scratch/okn-web3-dashboard';
+const rootDir = __dirname;
 
 // Clean logo
 const logoImgDesktop = '<div class="logo-box" style="width: 42px; height: 42px; border-radius: 12px; background: var(--s2); border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; flex: 0 0 auto; box-shadow: 0 4px 14px rgba(0,0,0,0.12);"><img src="assets/okn-logo.png" alt="OKN logo" style="width: 34px; height: 34px; object-fit: contain; display: block; filter: drop-shadow(0 2px 6px rgba(122, 18, 245, 0.35));"></div>';
