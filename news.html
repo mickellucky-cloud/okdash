@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>News | OKN Token</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0A0A0C;
+      --s1: #131316;
+      --s2: #1B1B20;
+      --line: #26262D;
+      --tx: #F5F5F7;
+      --mut: #A3A3AF;
+      --vio: #7A12F5;
+      --vio2: #8C38F7;
+      --vio-l: #C9A6FF;
+      --cyan: #09B4FF;
+      --yel: #FFD60A;
+      --org: #FFAA00;
+      --cyan-t: #09B4FF;
+      --yel-t: #FFD60A;
+      --org-t: #FFAA00;
+      --inv-bg: #FFFFFF;
+      --inv-tx: #0A0A0C;
+      --inv-mut: #5B5B66;
+      --inv-chip: #F0F0F4;
+      --dash: #3A3A44;
+      --ok: #2FBD8E;
+    }
+    [data-theme="light"] {
+      --bg: #F5F3FA;
+      --s1: #FFFFFF;
+      --s2: #EFEBF8;
+      --line: #E2DDEE;
+      --tx: #15121F;
+      --mut: #5C5870;
+      --vio: #7A12F5;
+      --vio2: #8C38F7;
+      --vio-l: #6A0FD4;
+      --cyan: #0A84C6;
+      --cyan-t: #0A6FA6;
+      --yel-t: #8A6500;
+      --org-t: #9A5A00;
+      --inv-bg: #17141F;
+      --inv-tx: #FFFFFF;
+      --inv-mut: #B9B5C9;
+      --inv-chip: #2C2838;
+      --dash: #CBC5DB;
+      --ok: #0B8F63;
+    }
+  </style>
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- App Layout Shell -->
+  <div class="app-layout">
+    <!-- Desktop & Tablet Sidebar -->
+    
+    <aside aria-label="Sidebar">
+      <!-- Logo lockup -->
+      <div style="display: flex; align-items: center; gap: 12px; height: 72px; padding: 0px 20px;">
+        <div class="logo-box" style="width: 42px; height: 42px; border-radius: 12px; background: var(--s2); border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; flex: 0 0 auto; box-shadow: 0 4px 14px rgba(0,0,0,0.12);"><img src="assets/okn-logo.png" alt="OKN logo" style="width: 34px; height: 34px; object-fit: contain; display: block; filter: drop-shadow(0 2px 6px rgba(122, 18, 245, 0.35));"></div>
+        <div style="min-width: 0px;" class="sidebar-hide-tablet">
+          <div class="num" style="font-size: 20px; font-weight: 700; line-height: 1.1;">$OKN</div>
+          <div style="font-size: 12px; font-weight: 600; color: var(--mut); margin-top: 2px;">Earn, Claim, Buy</div>
+        </div>
+      </div>
+
+      <!-- Search bar -->
+      <div class="sidebar-hide-tablet" style="padding: 4px 14px 8px;">
+        <div style="position: relative; display: flex; align-items: center;">
+          <svg class="i" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position: absolute; left: 14px; color: var(--mut);"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>
+          <input type="text" placeholder="Search" style="width: 100%; height: 42px; border-radius: 14px; border: 1px solid var(--line); background: var(--s2); color: var(--tx); font-size: 14px; font-weight: 600; padding: 0px 14px 0px 42px; outline: none; transition: border-color 0.2s ease;">
+        </div>
+      </div>
+
+      <!-- Navigation Menu (Exact Live Order) -->
+      <nav aria-label="Primary" style="flex: 1 1 0%; padding: 4px 14px 20px; display: flex; flex-direction: column; gap: 2px; overflow-y: auto;">
+        <div class="sidebar-hide-tablet" style="font-size: 11px; font-weight: 800; letter-spacing: 0.12em; color: var(--mut); padding: 4px 14px 8px;">MENU</div>
+        
+            <a href="portfolio.html" title="Portfolio" class="nav-i " style="display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 42px; border-radius: 12px; font-size: 14px; font-weight: 700; padding: 0px 14px; text-decoration: none; color: var(--tx); background: transparent; transition: all 0.2s cubic-bezier(0.22, 1, 0.36, 1);">
+              <div style="display: flex; align-items: center; gap: 12px; min-width: 0;">
+                <svg class="i" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto;"><path d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z"></path><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path></svg>
+                <span class="sc-interp sidebar-hide-tablet" style="white-space: nowrap;">Portfolio</span>
+              </div>
+              
+            </a>
+          
+            <a href="agents.html" title="AI Trading Agent" class="nav-i " style="display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 42px; border-radius: 12px; font-size: 14px; font-weight: 700; padding: 0px 14px; text-decoration: none; color: var(--tx); background: transparent; transition: all 0.2s cubic-bezier(0.22, 1, 0.36, 1);">
+              <div style="display: flex; align-items: center; gap: 12px; min-width: 0;">
+                <svg class="i" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto;"><path d="M12 8V4H8"></path><rect width="16" height="12" x="4" y="8" rx="2"></rect><path d="M2 14h2"></path><path d="M20 14h2"></path><path d="M15 13v2"></path><path d="M9 13v2"></path></svg>
+                <span class="sc-interp sidebar-hide-tablet" style="white-space: nowrap;">AI Trading Agent</span>
+              </div>
+              <span class="sidebar-hide-tablet" style="font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 8px; background: rgba(255,170,0,0.16); color: var(--org-t);">Soon</span>
+            </a>
+          
+            <a href="agents.html" title="Polymarket Agent" class="nav-i " style="display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 42px; border-radius: 12px; font-size: 14px; font-weight: 700; padding: 0px 14px; text-decoration: none; color: var(--tx); background: transparent; transition: all 0.2s cubic-bezier(0.22, 1, 0.36, 1);">
+              <div style="display: flex; align-items: center; gap: 12px; min-width: 0;">
+                <img src="assets/polymarket.png" alt="Polymarket" style="width: 20px; height: 20px; border-radius: 50%; object-fit: contain; flex: 0 0 auto; display: block; box-shadow: 0 2px 8px rgba(9, 180, 255, 0.3);">
+                <span class="sc-interp sidebar-hide-tablet" style="white-space: nowrap;">Polymarket Agent</span>
+              </div>
+              <span class="sidebar-hide-tablet" style="font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 8px; background: rgba(255,170,0,0.16); color: var(--org-t);">Soon</span>
+            </a>
+          
+            <a href="agents.html" title="Prediction Markets" class="nav-i " style="display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 42px; border-radius: 12px; font-size: 14px; font-weight: 700; padding: 0px 14px; text-decoration: none; color: var(--tx); background: transparent; transition: all 0.2s cubic-bezier(0.22, 1, 0.36, 1);">
+              <div style="display: flex; align-items: center; gap: 12px; min-width: 0;">
+                <svg class="i" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto;"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><path d="M18 17V9"></path><path d="M13 17V5"></path><path d="M8 17v-3"></path></svg>
+                <span class="sc-interp sidebar-hide-tablet" style="white-space: nowrap;">Prediction Markets</span>
+              </div>
+              <span class="sidebar-hide-tablet" style="font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 8px; background: rgba(255,170,0,0.16); color: var(--org-t);">Soon</span>
+            </a>
+          
+            <a href="leaderboard.html" title="Leaderboard" class="nav-i " style="display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 42px; border-radius: 12px; font-size: 14px; font-weight: 700; padding: 0px 14px; text-decoration: none; color: var(--tx); background: transparent; transition: all 0.2s cubic-bezier(0.22, 1, 0.36, 1);">
+              <div style="display: flex; align-items: center; gap: 12px; min-width: 0;">
+                <svg class="i" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto;"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg>
+                <span class="sc-interp sidebar-hide-tablet" style="white-space: nowrap;">Leaderboard</span>
+              </div>
+              
+            </a>
+          
+            <a href="missions.html" title="Missions" class="nav-i " style="display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 42px; border-radius: 12px; font-size: 14px; font-weight: 700; padding: 0px 14px; text-decoration: none; color: var(--tx); background: transparent; transition: all 0.2s cubic-bezier(0.22, 1, 0.36, 1);">
+              <div style="display: flex; align-items: center; gap: 12px; min-width: 0;">
+                <svg class="i" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto;"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                <span class="sc-interp sidebar-hide-tablet" style="white-space: nowrap;">Missions</span>
+              </div>
+              
+            </a>
+          
+            <a href="tasks.html" title="Tasks" class="nav-i " style="display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 42px; border-radius: 12px; font-size: 14px; font-weight: 700; padding: 0px 14px; text-decoration: none; color: var(--tx); background: transparent; transition: all 0.2s cubic-bezier(0.22, 1, 0.36, 1);">
+              <div style="display: flex; align-items: center; gap: 12px; min-width: 0;">
+                <svg class="i" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto;"><rect x="3" y="5" width="6" height="6" rx="1"></rect><path d="m3 17 2 2 4-4"></path><path d="M13 6h8"></path><path d="M13 12h8"></path><path d="M13 18h8"></path></svg>
+                <span class="sc-interp sidebar-hide-tablet" style="white-space: nowrap;">Tasks</span>
+              </div>
+              
+            </a>
+          
+            <a href="claim.html" title="Claim" class="nav-i " style="display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 42px; border-radius: 12px; font-size: 14px; font-weight: 700; padding: 0px 14px; text-decoration: none; color: var(--tx); background: transparent; transition: all 0.2s cubic-bezier(0.22, 1, 0.36, 1);">
+              <div style="display: flex; align-items: center; gap: 12px; min-width: 0;">
+                <svg class="i" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto;"><rect x="3" y="8" width="18" height="4" rx="1"></rect><path d="M12 8v13"></path><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"></path><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"></path></svg>
+                <span class="sc-interp sidebar-hide-tablet" style="white-space: nowrap;">Claim</span>
+              </div>
+              
+            </a>
+          
+            <a href="buy.html" title="Buy" class="nav-i " style="display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 42px; border-radius: 12px; font-size: 14px; font-weight: 700; padding: 0px 14px; text-decoration: none; color: var(--tx); background: transparent; transition: all 0.2s cubic-bezier(0.22, 1, 0.36, 1);">
+              <div style="display: flex; align-items: center; gap: 12px; min-width: 0;">
+                <svg class="i" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto;"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+                <span class="sc-interp sidebar-hide-tablet" style="white-space: nowrap;">Buy</span>
+              </div>
+              
+            </a>
+          
+            <a href="agents.html" title="Staking" class="nav-i " style="display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 42px; border-radius: 12px; font-size: 14px; font-weight: 700; padding: 0px 14px; text-decoration: none; color: var(--tx); background: transparent; transition: all 0.2s cubic-bezier(0.22, 1, 0.36, 1);">
+              <div style="display: flex; align-items: center; gap: 12px; min-width: 0;">
+                <svg class="i" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto;"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                <span class="sc-interp sidebar-hide-tablet" style="white-space: nowrap;">Staking</span>
+              </div>
+              <span class="sidebar-hide-tablet" style="font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 8px; background: rgba(255,170,0,0.16); color: var(--org-t);">Soon</span>
+            </a>
+          
+            <a href="news.html" title="News" class="nav-i active" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 42px; border-radius: 12px; font-size: 14px; font-weight: 700; padding: 0px 14px; text-decoration: none; color: #fff; background: var(--vio); transition: all 0.2s cubic-bezier(0.22, 1, 0.36, 1);">
+              <div style="display: flex; align-items: center; gap: 12px; min-width: 0;">
+                <svg class="i" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto;"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"></path><path d="M18 14h-8"></path><path d="M15 18h-5"></path><path d="M10 6h8v4h-8V6Z"></path></svg>
+                <span class="sc-interp sidebar-hide-tablet" style="white-space: nowrap;">News</span>
+              </div>
+              
+            </a>
+          
+            <a href="learn.html" title="Learn" class="nav-i " style="display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 42px; border-radius: 12px; font-size: 14px; font-weight: 700; padding: 0px 14px; text-decoration: none; color: var(--tx); background: transparent; transition: all 0.2s cubic-bezier(0.22, 1, 0.36, 1);">
+              <div style="display: flex; align-items: center; gap: 12px; min-width: 0;">
+                <svg class="i" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto;"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg>
+                <span class="sc-interp sidebar-hide-tablet" style="white-space: nowrap;">Learn</span>
+              </div>
+              
+            </a>
+          
+            <a href="wallet.html" title="Wallet" class="nav-i " style="display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 42px; border-radius: 12px; font-size: 14px; font-weight: 700; padding: 0px 14px; text-decoration: none; color: var(--tx); background: transparent; transition: all 0.2s cubic-bezier(0.22, 1, 0.36, 1);">
+              <div style="display: flex; align-items: center; gap: 12px; min-width: 0;">
+                <svg class="i" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto;"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"></path><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"></path></svg>
+                <span class="sc-interp sidebar-hide-tablet" style="white-space: nowrap;">Wallet</span>
+              </div>
+              
+            </a>
+          
+            <a href="referral.html" title="Referral" class="nav-i " style="display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 42px; border-radius: 12px; font-size: 14px; font-weight: 700; padding: 0px 14px; text-decoration: none; color: var(--tx); background: transparent; transition: all 0.2s cubic-bezier(0.22, 1, 0.36, 1);">
+              <div style="display: flex; align-items: center; gap: 12px; min-width: 0;">
+                <svg class="i" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto;"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                <span class="sc-interp sidebar-hide-tablet" style="white-space: nowrap;">Referral</span>
+              </div>
+              
+            </a>
+          
+      </nav>
+
+      <!-- Bottom Earn more $OKN card (Exact Live Layout) -->
+      <div class="sidebar-hide-tablet" style="padding: 14px; margin-top: auto;">
+        <div style="background: linear-gradient(135deg, #09B4FF 0%, #7A12F5 100%); color: #fff; border-radius: 18px; padding: 16px; display: flex; flex-direction: column; gap: 8px; box-shadow: 0 10px 28px rgba(122,18,245,0.35);">
+          <div style="font-size: 14px; font-weight: 800;">Earn more $OKN</div>
+          <div style="font-size: 12px; opacity: 0.88; line-height: 1.45;">Complete tasks and invite friends to stack points.</div>
+          <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 6px;">
+            <a href="referral.html" style="height: 36px; border-radius: 10px; background: #fff; color: #09B4FF; font-weight: 800; font-size: 12px; display: flex; align-items: center; justify-content: center; gap: 6px; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: transform 0.15s ease;">
+              <span>Invite friends</span>
+              <svg class="i" width="14" height="14" viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </a>
+            <a href="tasks.html" style="height: 32px; border-radius: 10px; background: rgba(255, 255, 255, 0.16); color: #fff; font-weight: 700; font-size: 12px; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: background 0.2s ease;">
+              Learn more
+            </a>
+          </div>
+        </div>
+      </div>
+    </aside>
+  
+
+    <!-- Main Content Wrapper -->
+    <div class="main-wrapper">
+      <!-- Desktop Topbar -->
+      
+    <header class="desktop-header">
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <button onclick="toggleSidebar()" aria-label="Toggle sidebar" style="width: 40px; height: 40px; border-radius: 12px; background: var(--s2); border: 1px solid var(--line); color: var(--tx); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: background 0.2s ease;">
+          <svg class="i" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+        </button>
+      </div>
+
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <!-- Language selector -->
+        <button style="height: 40px; padding: 0 14px; border-radius: 20px; background: var(--s2); border: 1px solid var(--line); color: var(--tx); font-size: 13px; font-weight: 700; display: flex; align-items: center; gap: 8px; cursor: pointer; transition: all 0.2s ease;">
+          <svg class="i" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--mut);"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          <span>EN</span>
+          <svg class="i" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--mut);"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+
+        <!-- Theme toggle -->
+        <button onclick="toggleTheme()" class="theme-toggle-btn" aria-label="Toggle theme" style="width: 40px; height: 40px; border-radius: 50%; background: var(--s2); border: 1px solid var(--line); color: var(--tx); display: flex; align-items: center; justify-content: center; cursor: pointer;">
+          <svg class="i theme-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+
+        <!-- Notification bell -->
+        <button aria-label="Notifications" style="position: relative; width: 40px; height: 40px; border-radius: 50%; background: var(--s2); border: 1px solid var(--line); color: var(--tx); display: flex; align-items: center; justify-content: center; cursor: pointer;">
+          <svg class="i" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+          <span style="position: absolute; top: 9px; right: 9px; width: 8px; height: 8px; border-radius: 50%; background: var(--yel); border: 1.5px solid var(--s1);"></span>
+        </button>
+
+        <!-- User profile avatar -->
+        <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--vio); color: #fff; font-weight: 800; font-size: 14px; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 0 12px rgba(122,18,245,0.4);">
+          DE
+        </div>
+      </div>
+    </header>
+  
+
+      <!-- Mobile Topbar -->
+      
+    <header class="mobile-header">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <div class="logo-box" style="width: 42px; height: 42px; border-radius: 12px; background: var(--s2); border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; flex: 0 0 auto; box-shadow: 0 4px 14px rgba(0,0,0,0.12);"><img src="assets/okn-logo.png" alt="OKN logo" style="width: 34px; height: 34px; object-fit: contain; display: block; filter: drop-shadow(0 2px 6px rgba(122, 18, 245, 0.35));"></div>
+        <div>
+          <div style="font-size: 11px; font-weight: 600; color: var(--mut);">Welcome back</div>
+          <div style="font-size: 15px; font-weight: 800;">DE</div>
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <button onclick="toggleTheme()" class="theme-toggle-btn" aria-label="Toggle theme" style="width: 38px; height: 38px; border-radius: 50%; background: var(--s2); border: 1px solid var(--line); color: var(--tx); display: flex; align-items: center; justify-content: center; cursor: pointer;">
+          <svg class="i theme-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+
+        <button aria-label="Notifications" style="position: relative; width: 38px; height: 38px; border-radius: 50%; background: var(--s2); border: 1px solid var(--line); color: var(--tx); display: flex; align-items: center; justify-content: center; cursor: pointer;">
+          <svg class="i" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+          <span style="position: absolute; top: 8px; right: 8px; width: 8px; height: 8px; border-radius: 50%; background: var(--yel); border: 1.5px solid var(--s1);"></span>
+        </button>
+      </div>
+    </header>
+  
+
+      <!-- Page Content: Desktop/Tablet View -->
+      <div class="content-container hide-on-mobile">
+        
+  <section style="background: var(--vio); color: #fff; border-radius: 28px; padding: 32px 36px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.12);">
+    <div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.8; margin-bottom: 6px;">Official Updates</div>
+    <h1 style="font-size: 32px; font-weight: 800; margin: 0 0 8px; letter-spacing: -0.02em;">Ecosystem News</h1>
+    <p style="font-size: 15px; opacity: 0.85; margin: 0; max-width: 600px;">Direct dispatches from the OKN core development team.</p>
+  </section>
+
+  <div style="display: flex; flex-direction: column; gap: 16px;">
+    <div style="background: var(--s1); border: 1px solid var(--line); border-radius: 24px; padding: 28px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+        <span style="font-size: 11px; font-weight: 800; padding: 4px 10px; border-radius: 8px; background: rgba(9,180,255,0.15); color: var(--cyan);">Protocol</span>
+        <span style="font-size: 12px; color: var(--mut);">Nov 2, 2026</span>
+      </div>
+      <div style="font-size: 20px; font-weight: 800; margin-bottom: 8px;">BSC Testnet Smart Contracts Deployed</div>
+      <p style="font-size: 14px; color: var(--mut); line-height: 1.6; margin: 0;">Presale, staking, and Merkle claim distribution contracts have been verified on BSC Testnet. Testing is currently underway.</p>
+    </div>
+
+    <div style="background: var(--s1); border: 1px solid var(--line); border-radius: 24px; padding: 28px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+        <span style="font-size: 11px; font-weight: 800; padding: 4px 10px; border-radius: 8px; background: rgba(255,214,10,0.15); color: var(--yel-t);">Community</span>
+        <span style="font-size: 12px; color: var(--mut);">Oct 28, 2026</span>
+      </div>
+      <div style="font-size: 20px; font-weight: 800; margin-bottom: 8px;">Affiliate Partner Program Launch</div>
+      <p style="font-size: 14px; color: var(--mut); line-height: 1.6; margin: 0;">Partners can now access up to 15% direct commission and custom tracking links through the partner package dashboard.</p>
+    </div>
+  </div>
+
+      </div>
+
+      <!-- Page Content: Mobile View -->
+      <div class="content-container mobile-only" style="display: none;">
+        
+    <div style="padding: 16px 16px 90px; width: 100%; max-width: 540px; margin: 0 auto; box-sizing: border-box;">
+      
+  <section style="background: var(--vio); color: #fff; border-radius: 28px; padding: 32px 36px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.12);">
+    <div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.8; margin-bottom: 6px;">Official Updates</div>
+    <h1 style="font-size: 32px; font-weight: 800; margin: 0 0 8px; letter-spacing: -0.02em;">Ecosystem News</h1>
+    <p style="font-size: 15px; opacity: 0.85; margin: 0; max-width: 600px;">Direct dispatches from the OKN core development team.</p>
+  </section>
+
+  <div style="display: flex; flex-direction: column; gap: 16px;">
+    <div style="background: var(--s1); border: 1px solid var(--line); border-radius: 24px; padding: 28px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+        <span style="font-size: 11px; font-weight: 800; padding: 4px 10px; border-radius: 8px; background: rgba(9,180,255,0.15); color: var(--cyan);">Protocol</span>
+        <span style="font-size: 12px; color: var(--mut);">Nov 2, 2026</span>
+      </div>
+      <div style="font-size: 20px; font-weight: 800; margin-bottom: 8px;">BSC Testnet Smart Contracts Deployed</div>
+      <p style="font-size: 14px; color: var(--mut); line-height: 1.6; margin: 0;">Presale, staking, and Merkle claim distribution contracts have been verified on BSC Testnet. Testing is currently underway.</p>
+    </div>
+
+    <div style="background: var(--s1); border: 1px solid var(--line); border-radius: 24px; padding: 28px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+        <span style="font-size: 11px; font-weight: 800; padding: 4px 10px; border-radius: 8px; background: rgba(255,214,10,0.15); color: var(--yel-t);">Community</span>
+        <span style="font-size: 12px; color: var(--mut);">Oct 28, 2026</span>
+      </div>
+      <div style="font-size: 20px; font-weight: 800; margin-bottom: 8px;">Affiliate Partner Program Launch</div>
+      <p style="font-size: 14px; color: var(--mut); line-height: 1.6; margin: 0;">Partners can now access up to 15% direct commission and custom tracking links through the partner package dashboard.</p>
+    </div>
+  </div>
+
+    </div>
+  
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Bottom Navigation Bar -->
+  
+    <nav class="bottom-nav-bar" aria-label="Bottom Navigation">
+      
+          <a href="home.html" class="bottom-nav-item active">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+            <span>Home</span>
+          </a>
+        
+          <a href="earn.html" class="bottom-nav-item ">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            <span>Earn</span>
+          </a>
+        
+          <a href="claim.html" class="bottom-nav-item ">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v13m0 0l-5-5m5 5l5-5M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"></path></svg>
+            <span>Claim</span>
+          </a>
+        
+          <a href="buy.html" class="bottom-nav-item ">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+            <span>Buy</span>
+          </a>
+        
+          <a href="agents.html" class="bottom-nav-item ">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line></svg>
+            <span>Agents</span>
+          </a>
+        
+    </nav>
+  
+
+  <!-- Global Production Scripts -->
+  
+    <script>
+      // Theme Toggle and Synchronization
+      function updateThemeIcons(theme) {
+        const sun = '<svg class="i theme-icon" width="18" height="18" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>';
+        const moon = '<svg class="i theme-icon" width="18" height="18" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
+        document.querySelectorAll('.theme-toggle-btn').forEach(b => {
+          b.innerHTML = theme === 'light' ? moon : sun;
+        });
+      }
+
+      function toggleTheme() {
+        const current = document.documentElement.getAttribute('data-theme') || 'dark';
+        const next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('okn_theme', next);
+        updateThemeIcons(next);
+      }
+
+      (function() {
+        const saved = localStorage.getItem('okn_theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', saved);
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', () => updateThemeIcons(saved));
+        } else {
+          updateThemeIcons(saved);
+        }
+      })();
+
+      // Smooth Page Transitions & Scroll Choreography
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('a[href]').forEach(a => {
+          const href = a.getAttribute('href');
+          if (!href || href.startsWith('#') || href.startsWith('javascript:') || a.target === '_blank') return;
+          if (href.endsWith('.html') || (!href.includes('://') && !href.startsWith('mailto:'))) {
+            a.addEventListener('click', (e) => {
+              if (e.metaKey || e.ctrlKey || e.shiftKey) return;
+              const main = document.querySelector('.main-wrapper') || document.body;
+              e.preventDefault();
+              main.style.transition = 'opacity 0.16s cubic-bezier(0.22, 1, 0.36, 1), transform 0.16s cubic-bezier(0.22, 1, 0.36, 1)';
+              main.style.opacity = '0.35';
+              main.style.transform = 'translateY(6px)';
+              setTimeout(() => {
+                window.location.href = href;
+              }, 130);
+            });
+          }
+        });
+      });
+
+      // Copy Referral Link to Clipboard
+      function copyReferralLink() {
+        const link = 'https://app.okntoken.com/ref/DE-71C49';
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(link).then(showCopied).catch(fallback);
+        } else {
+          fallback();
+        }
+        function fallback() {
+          const ta = document.createElement('textarea');
+          ta.value = link;
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+          showCopied();
+        }
+        function showCopied() {
+          const btns = document.querySelectorAll('.copy-ref-btn');
+          btns.forEach(b => {
+            const span = b.querySelector('span');
+            if (span) span.innerText = 'Copied!';
+            b.style.background = 'var(--ok, #2FBD8E)';
+            b.style.color = '#fff';
+            setTimeout(() => {
+              if (span) span.innerText = 'Copy link';
+              b.style.background = '';
+              b.style.color = '';
+            }, 2500);
+          });
+          showToast('Referral link copied to clipboard!');
+        }
+      }
+
+      function showToast(msg) {
+        let toast = document.getElementById('okn-toast');
+        if (!toast) {
+          toast = document.createElement('div');
+          toast.id = 'okn-toast';
+          toast.style.cssText = 'position:fixed;bottom:28px;left:50%;transform:translateX(-50%) translateY(20px);background:rgba(19,19,22,0.95);backdrop-filter:blur(16px);border:1px solid var(--line);border-radius:16px;color:#fff;padding:12px 24px;font-size:13px;font-weight:700;z-index:999999;box-shadow:0 10px 30px rgba(0,0,0,0.5);display:flex;align-items:center;gap:10px;opacity:0;transition:all 0.3s cubic-bezier(0.22,1,0.36,1);pointer-events:none;';
+          document.body.appendChild(toast);
+        }
+        toast.innerHTML = '<svg class="i" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--ok, #2FBD8E)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex:0 0 auto;"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>' + msg + '</span>';
+        toast.style.opacity = '1';
+        toast.style.transform = 'translateX(-50%) translateY(0)';
+        setTimeout(() => {
+          toast.style.opacity = '0';
+          toast.style.transform = 'translateX(-50%) translateY(20px)';
+        }, 2500);
+      }
+
+      // Sidebar Collapse Toggle
+      function toggleSidebar() {
+        const aside = document.querySelector('aside[aria-label="Sidebar"]');
+        if (!aside) return;
+        const isCollapsed = aside.getAttribute('data-collapsed') === 'true';
+        if (isCollapsed) {
+          aside.style.flex = '0 0 272px';
+          aside.style.width = '272px';
+          aside.removeAttribute('data-collapsed');
+          aside.querySelectorAll('.sidebar-hide-tablet').forEach(el => el.style.display = '');
+        } else {
+          aside.style.flex = '0 0 72px';
+          aside.style.width = '72px';
+          aside.setAttribute('data-collapsed', 'true');
+          aside.querySelectorAll('.sidebar-hide-tablet').forEach(el => el.style.display = 'none');
+        }
+      }
+
+      // Web3 Wallet Connection Modal
+      function openWalletModal() {
+        let overlay = document.getElementById('wallet-modal-overlay');
+        if (!overlay) {
+          overlay = document.createElement('div');
+          overlay.id = 'wallet-modal-overlay';
+          overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.8);backdrop-filter:blur(10px);z-index:999999;display:flex;align-items:center;justify-content:center;padding:20px;';
+          overlay.innerHTML = `
+            <div style="background:var(--s1);border:1px solid var(--line);border-radius:24px;padding:24px;max-width:380px;width:100%;color:var(--tx);font-family:Manrope,sans-serif;box-shadow:0 30px 90px rgba(0,0,0,0.9);">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+                <div style="font-size:16px;font-weight:800;">Connect Wallet</div>
+                <button onclick="document.getElementById('wallet-modal-overlay').remove()" style="background:var(--s2);border:1px solid var(--line);border-radius:50%;width:32px;height:32px;color:var(--mut);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.2s ease;">
+                  <svg class="i" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+              </div>
+              <div style="font-size:12px;color:var(--mut);margin-bottom:16px;">Select your Web3 wallet provider on BNB Smart Chain.</div>
+              <div onclick="selectWallet('MetaMask')" class="wallet-opt" style="display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-radius:14px;background:var(--s2);border:1px solid var(--line);margin-bottom:10px;cursor:pointer;transition:all 0.2s ease;">
+                <div style="display:flex;align-items:center;gap:12px;font-weight:700;font-size:14px;">
+                  <svg width="22" height="22" viewBox="0 0 32 32" fill="none"><path d="M28.4 4.5l-10.8 8 2 4.7 6.4-1.9 2.4-10.8z" fill="#E2761B"/><path d="M3.6 4.5l10.8 8-2 4.7-6.4-1.9L3.6 4.5z" fill="#E4751F"/><path d="M24.7 21.6l-6.3 1.9.9 2.5 4.3 1.3 1.1-5.7z" fill="#E4761B"/><path d="M7.3 21.6l6.3 1.9-.9 2.5-4.3 1.3-1.1-5.7z" fill="#E4761B"/><path d="M13.6 23.5l-5.3-1.6 3.8 6.7 1.5-5.1z" fill="#D7C1B3"/><path d="M18.4 23.5l5.3-1.6-3.8 6.7-1.5-5.1z" fill="#D7C1B3"/><path d="M11.9 14.8l-1.9 3.5 4.7.2-.2-4.1-2.6.4z" fill="#233447"/><path d="M20.1 14.8l1.9 3.5-4.7.2.2-4.1 2.6.4z" fill="#233447"/><path d="M16 18.5l-4.7-.2 3.4 5.2.9-5z" fill="#E4751F"/></svg>
+                  <span>MetaMask</span>
+                </div>
+                <span style="font-size:10px;background:var(--vio);color:#fff;padding:2px 8px;border-radius:6px;font-weight:700;">Popular</span>
+              </div>
+              <div onclick="selectWallet('Binance Web3 Wallet')" class="wallet-opt" style="display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-radius:14px;background:var(--s2);border:1px solid var(--line);margin-bottom:10px;cursor:pointer;transition:all 0.2s ease;">
+                <div style="display:flex;align-items:center;gap:12px;font-weight:700;font-size:14px;">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="#F3BA2F"><path d="M12 3.2L16.2 7.4L18.4 5.2L12 0L5.6 5.2L7.8 7.4L12 3.2ZM20.8 7.6L18.6 9.8L20.8 12L23 9.8L20.8 7.6ZM12 8.4L15.6 12L12 15.6L8.4 12L12 8.4ZM3.2 7.6L1 9.8L3.2 12L5.4 9.8L3.2 7.6ZM12 16.6L7.8 12.4L5.6 14.6L12 21L18.4 14.6L16.2 12.4L12 16.6ZM20.8 12L18.6 14.2L20.8 16.4L23 14.2L20.8 12ZM3.2 12L1 14.2L3.2 16.4L5.4 14.2L3.2 12Z"/></svg>
+                  <span>Binance Web3</span>
+                </div>
+                <span style="font-size:10px;background:rgba(255,170,0,0.2);color:var(--org);padding:2px 8px;border-radius:6px;font-weight:700;">BSC Native</span>
+              </div>
+              <div onclick="selectWallet('Trust Wallet')" class="wallet-opt" style="display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-radius:14px;background:var(--s2);border:1px solid var(--line);cursor:pointer;transition:all 0.2s ease;">
+                <div style="display:flex;align-items:center;gap:12px;font-weight:700;font-size:14px;">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2L4 6v6.2c0 5.5 3.4 10.7 8 11.8 4.6-1.1 8-6.3 8-11.8V6l-8-4z" fill="#0500FF"/><path d="M12 4.2L5.8 7.3v5c0 4.3 2.6 8.3 6.2 9.4 3.6-1.1 6.2-5.1 6.2-9.4v-5L12 4.2z" fill="#fff"/><path d="M12 6.5l4 2.5v3.4c0 2.8-1.7 5.4-4 6.3V6.5z" fill="#0500FF"/></svg>
+                  <span>Trust Wallet</span>
+                </div>
+              </div>
+            </div>
+          `;
+          document.body.appendChild(overlay);
+        }
+      }
+
+      function selectWallet(name) {
+        const overlay = document.getElementById('wallet-modal-overlay');
+        if (overlay) overlay.remove();
+        const addr = '0x71C...49A1';
+        document.querySelectorAll('button').forEach(b => {
+          if ((b.innerText || '').toLowerCase().includes('connect wallet')) {
+            b.innerHTML = '<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:currentColor;margin-right:8px;box-shadow:0 0 8px currentColor;"></span> ' + addr;
+            b.style.background = 'var(--ok)';
+            b.style.color = '#fff';
+          }
+        });
+        showToast('Connected ' + name + ' (' + addr + ') on BNB Smart Chain!');
+      }
+    </script>
+  
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "okn-web3-dashboard",
+  "version": "1.0.0",
+  "description": "Clean, production-grade responsive Web3 dashboard for OKN Token",
+  "main": "serve.js",
+  "scripts": {
+    "start": "node serve.js",
+    "build": "node build.js"
+  },
+  "keywords": [
+    "web3",
+    "dashboard",
+    "okn",
+    "defi",
+    "crypto"
+  ],
+  "author": "",
+  "license": "MIT"
+}
